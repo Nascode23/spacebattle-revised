@@ -1,0 +1,116 @@
+ body{
+    overflow:auto;
+} 
+/* The CSS property "overflow: hidden;" is used to control how content that exceeds the dimensions of an element is displayed.
+ When you apply "overflow: hidden;" to an element, it clips any content that overflows its boundaries and hides it from view. */
+
+ *, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+ 
+  /* 1.* selects all elements on the page.
+     2.box-sizing: border-box; sets the box-sizing property to border-box,
+     which includes the element's padding and border within its total width and height. This ensures that the element's content stays within its specified dimensions.
+     3.padding: 0; sets the padding of all elements to 0, removing any default padding.
+     4.margin: 0; sets the margin of all elements to 0, removing any default margin.
+     5.*::before and *::after select the pseudo-elements ::before and ::after 
+     for all elements on the page. Pseudo-elements are used to insert content before or after the content of an element.*/
+
+    html{
+        position: relative;
+        min-height: 100%;
+     }
+     /*The vh unit represents a percentage of the viewport height. 
+     So, 100vh means the element's height will be equal to the full height of the viewport.*/
+
+     body{
+        background-image: url('images/universe.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family: Emulogic, 'Monospace', sans-serif;
+     }
+    
+ #header{
+        line-height: 1.2;
+        font-family: fangsong, 'Monospace', sans-serif;
+        font-size: larger;
+        color:rgb(213, 195, 24);
+        text-align: center;
+    }
+   
+    h1{
+        padding: 30px;
+        color:rgb(213, 195, 24);
+    }
+    h2{ 
+        padding: 30px;
+        color:rgb(213, 195, 24);
+    }
+
+    h3{padding: 30px;
+        color:rgb(213, 195, 24);
+    }
+#main{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:flex-start ;
+    gap:3em;
+    margin-bottom: 2em;
+    padding:2em;
+    max-width:100vw;
+    overflow: hidden;
+}
+
+#warzone{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:3em;
+} 
+
+#Aliens{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+}
+
+button{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:20px 40px;/*sets the padding of the button to 20 pixels on the top and bottom, and 40 pixels on the left and right.*/
+    border: 5px;
+    border-radius: 20px;
+    background-color:darkblue;
+    color: rgb(213, 195, 24);
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 4px;
+}
+
+#gameBtns{
+    background-color:transparent;
+    color:whitesmoke;
+    position: absolute;
+    bottom: 40px;
+    left:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100% ;
+    height:2em;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
